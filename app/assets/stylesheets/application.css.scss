@@ -1,0 +1,70 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require jquery.ui.all
+ *= require_tree .
+ */
+
+@import "bootstrap";
+@import "font-awesome";
+
+.board-index {
+	float: left;
+	height: 100px;
+	width: 200px;
+	background-color: rgb(66, 139, 202);
+	border: 1px solid rgb(53, 126, 189);
+	color: white;
+	list-style: none;
+	margin: 20px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+li.board-new {
+	background-color: white;
+	border: 1px solid rgb(231, 231, 231);
+	color: black;
+}
+
+li.board-new:hover {
+	background-color: rgb(231, 231, 231);
+}
+
+.board-index:hover {
+	background-color: #357ebd;
+}
+
+li.list-index {
+	float: left;
+	height: 450px;
+	width: 250px;
+	background-color: rgb(66, 139, 202);
+	border: 1px solid rgb(53, 126, 189);
+	color: white;
+	list-style: none;
+	margin: 20px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+div.card-index {
+	float: left;
+	height: 100px;
+	width: 190px;
+	background-color: white;
+	border: 1px solid rgb(231, 231, 231);;
+	color: black;
+	list-style: none;
+	margin: 20px;
+	padding: 10px;
+	border-radius: 5px;
+}

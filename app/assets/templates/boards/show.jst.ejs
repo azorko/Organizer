@@ -1,0 +1,14 @@
+<h2> <%= board.get("title") %></h1>
+
+<ul>
+	<% board.lists().each(function (list) { %>
+		<li class="list-index">
+			<%= list.escape("title") %>
+			<% list.cards().each(function (card) { %>
+			  <div class="card-index">
+					<%= card.escape("title") %>
+				</div>
+			<% }) %>
+		</li>
+	<% }) %>
+</ul>
